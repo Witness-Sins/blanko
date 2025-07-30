@@ -28,9 +28,11 @@ main {
 /* #endregion base */
 
 header {
+  z-index: 10;
   height: 80px;
   background-color: var(--main-color);
   color: var(--light-color);
+  position: relative;
 }
 .container {
   height: 100%;
@@ -66,9 +68,7 @@ header {
   align-items: center;
   list-style: none;
 }
-
-button {
-  background-color: var(--accent-color);
+.head_butt {
   width: 13rem;
   height: 3rem;
   display: flex;
@@ -77,11 +77,65 @@ button {
   margin-right: 6rem;
   font-size: 1rem;
   font-weight: 700;
-}
-.accent {
+  background-color: var(--accent-color);
   color: var(--main-color);
   cursor: pointer;
   border: none;
   border-radius: 6px;
   font-weight: 600;
+}
+.site {
+  background-color: var(--accent-color);
+  position: relative;
+  overflow: visible;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.purchase__butt {
+  width: 13rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.other_butt {
+  width: 13rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.site__left {
+}
+.site__right {
+  width: 100%;
+  position: relative;
+  overflow: visible;
+}
+.site__img {
+  position: absolute;
+  bottom: -365px;
+  right: 0;
+  z-index: 9;
+  height: auto;
 }
